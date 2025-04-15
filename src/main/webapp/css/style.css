@@ -24,7 +24,6 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px;
 }
 
 .login-container h1, .signup-right h1 {
@@ -84,7 +83,7 @@ body, html {
 .signup-container {
     display: flex;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
 }
 
 .signup-left {
@@ -92,12 +91,14 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d9d9d9;
+    background-color: #e0e0e0;
+    padding: 20px;
 }
 
 .signup-left img {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
+    border-radius: 10px;
 }
 
 .signup-right {
@@ -108,6 +109,51 @@ body, html {
     align-items: center;
     background-color: #ffffff;
     padding: 40px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-right h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.signup-right form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup-right label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup-right input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #333;
 }
 
 /* Home Page Specific Styles */
