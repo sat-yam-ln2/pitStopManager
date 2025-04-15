@@ -19,11 +19,21 @@
                 <input type="password" id="password" name="password" placeholder="Password">
                 
                 <button type="submit" class="login-btn">Login</button>
-                <div class="register-link">
-                    <span>New to PitStop Manager?</span>
-                    <a href="signup">Register</a>
-                </div>
+				<div class="register-link">
+				    <span>New to PitStop Manager?</span>
+				    <a href="${pageContext.request.contextPath}/signup">Register</a>
+				</div>
             </form>
+            
+            <% 
+                // Check if error is present in the request attribute
+                String error = (String) request.getAttribute("error");
+                if (error != null && !error.isEmpty()) { 
+            %>
+                <div class="error-message"><%= error %></div>
+            <% 
+                } 
+            %>
         </div>
     </div>
 </body>
